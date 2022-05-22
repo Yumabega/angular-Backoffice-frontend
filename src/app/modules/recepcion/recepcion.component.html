@@ -1,0 +1,44 @@
+<div class="bg-image" [style.backgroundImage]="backgroundImage"></div>
+
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+
+<mat-card class="aligner-center-item mat-elevation-z12 outerCard" fxFlex="70%" >
+<img 
+*ngIf="logo"
+class="logo"
+mat-card-image
+[src]="logo"
+alt="logo from company"
+/>
+<div fxLayout="row wrap" fxLayoutGap="10px"  class="upContainer" fxLayoutAlign="center center">
+  <div  fxLayout="column" fxFlex="100">
+    <mat-card-title class="greeting-title first-title">
+      ¡Bienvenido, {{userSession?.name}} {{userSession?.surname}}! 
+    </mat-card-title>
+    <mat-card-title class="greeting-title second-title">
+      <span>Ingrese a su</span> aplicativo Backoffice 
+    </mat-card-title>
+
+  </div>
+</div>
+<div class="downContainer" fxLayout.xs="column" 
+          fxLayout="row wrap" 
+          fxLayoutAlign={{hAlignment}}
+          fxLayoutGap="5% grid">
+  <div   
+    class="innerCard"
+    *ngFor="let cardValue of cardsImage"
+    fxFlex={{sizeCard}}
+    fxLayoutAlign="center center"
+    >  
+    <dav-reception-app-card            
+              [ngStyle]="getMyStyle"
+              [image]="cardValue.pathLogo" 
+              [app_name]="cardValue.descripcionAplicativo">
+      </dav-reception-app-card>
+  
+  </div>  
+</div>
+
+</mat-card>
+</div>

@@ -1,0 +1,22 @@
+<div class="outerContainer" [ngStyle]="setMyStyles()">
+</div>
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px" class="container">
+    <img 
+    *ngIf="logo"
+    class="logo-text"
+    mat-card-image
+    [src]="logo"
+    alt="logo from company"
+  
+  />
+  <mat-card 
+  class="aligner-center-item mat-elevation-z12"
+  fxFlex.lg="33%"
+  fxFlex.lt-lg="40%"
+  fxFlex.sm="50%"
+  >
+
+  <mat-card-title dav-title [color]="colorTitle">Aplicaciones Backoffice</mat-card-title>
+  <dav-form></dav-form>
+  </mat-card>
+</div>

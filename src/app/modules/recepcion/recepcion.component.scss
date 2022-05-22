@@ -1,0 +1,210 @@
+.bg-image {
+    /* Full height */
+    height: 110%; 
+    box-sizing: content-box;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  div.container {
+    position: absolute;
+      color: #ffffff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100vw;
+      height: 100%;
+  }
+
+.outerCard {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #464646;
+    border-radius: 10px;
+    min-height: 84vh;
+    margin-top:3%;
+}
+
+.logo{
+  position: absolute;
+  left: 4%;
+  right: 69.8%;
+  top: 8%;
+  bottom: 90%;
+  width:3rem;
+  height: 2.8rem;
+
+}
+
+.upContainer{
+  padding: 4% 0 1% 0;
+}
+.downContainer{
+  width: 100%;
+  margin:0;
+  height: 55vh;
+  
+}
+.innerCard{
+  padding: 0 !important;
+}
+
+
+
+.greeting-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  /* Background Botones */
+  color: #ED1C27;
+  &.first-title{
+    margin-bottom: -5px;
+  }
+  &.second-title  > span {
+    /* texto gris seleccionado */
+    color: #262626;
+    
+  }
+  
+}
+
+.cardTitle{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+
+@media  (min-width: 1280px) and (max-width: 1919.99px) and (orientation:landscape){
+  .logo{
+    width:4.8rem;
+    height: 4rem;
+  }
+  .greeting-title{
+    &.first-title{
+      font-size: 3.6rem;
+      line-height: 4.4rem;
+      padding-bottom: 0;
+    }
+    &.second-title{
+      font-size: 3rem;
+      line-height: 4.1rem;
+      margin-top: 0;
+      
+      & > span {
+        font-weight: 500;
+        font-size: 2.8rem;
+      }
+    }
+  }
+  footer.mat-card-title.app-card-footer{
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 900px) and (max-width: 1279.99px) and (orientation:landscape){
+  .logo{
+    width:4.6rem;
+    height:4.2rem;
+  }
+  .greeting-title{
+    &.first-title{
+      font-size: 3.3rem;
+      line-height: 4.3rem;
+    }
+    &.second-title{
+      font-size: 2.4rem;
+      line-height: 3.6rem;
+      
+      & > span {
+        font-weight: 400;
+        font-size: 2.2rem;
+      }
+    }
+  }
+  footer.mat-card-title.app-card-footer{
+    font-size: 16px !important;
+  }
+}
+@media  (min-width: 760px) and (max-width: 899.99px) and (orientation:landscape){
+  .logo{
+    width:4.4rem;
+    height: 4rem;
+  }
+  .greeting-title{
+    &.first-title{
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    &.second-title{
+      font-size: 2rem;
+      line-height: 3.2rem;
+      
+      & > span {
+        font-weight: 380;
+        font-size: 2rem;
+      }
+    }
+  }
+  footer.mat-card-title.app-card-footer{
+    font-size: 16px !important;
+  }
+}
+@media  (min-width: 500px) and (max-width: 759.99px) and (orientation:landscape){
+  .logo{
+    width:4rem;
+    height: 3.8rem;
+  }
+  .greeting-title{
+    &.first-title{
+      font-size: 2.6rem;
+      line-height: 3.6rem;
+    }
+    &.second-title{
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      
+      & > span {
+        font-weight: 340;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  footer.mat-card-title.app-card-footer{
+    font-size: 16px !important;
+  }
+}
+@media  (max-width: 499.99px) and (orientation:landscape){
+  .logo{
+    left: 8%;
+    right: 62.8%;
+    width:3.4rem;
+    height: 3rem;
+  }
+  .greeting-title{
+    &.first-title{
+      font-size: 2.2rem;
+      line-height: 3.3rem;
+    }
+    &.second-title{
+      font-size: 1.2rem;
+      line-height: 2rem;
+      
+      & > span {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+    }
+  } 
+  footer.mat-card-title.app-card-footer{
+    font-size: 16px !important;
+  }
+} 
